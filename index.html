@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="SmashApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="X-UA-compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Jordan Clarke">
+	<meta name="keywords" content="">
+	<!--<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>-->
+<!--<link data-require="bootstrap-css@2.3.2" data-semver="2.3.2" rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+    <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
+    <script data-require="angular-ui-bootstrap@0.3.0" data-semver="0.3.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.3.0.min.js"></script>
+    -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-route.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+	<!--<script src="scripts/ui-bootstrap-tpls-1.3.3.min"></script>-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>-->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/submit.js"></script>
+	<script src="scripts/videos.js"></script>
+	<script src="scripts/watch.js"></script>
+	
+
+	<!--
+	<script src="scripts/register.js"></script>
+	<script src="scripts/login.js"></script>
+	<script src="scripts/order.js"></script>
+	<script src="scripts/myorders.js"></script>-->
+	<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+	<title>Smash-Star</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+	 <!--<blockquote class="twitter-video" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/R8OKkVrT7F"></a></p><a href="https://twitter.com/wazhlon/status/747427883933630464"></a></blockquote>-->
+
+	<div id="wrapper">
+		<div id="sidebar-wrapper">
+			
+			<ul class="sidebar-nav">
+				<header>
+					<h1 id="head">SmashStar</h1>
+				</header>
+				<div class="search-box">
+					<form>
+						<input type="text">	
+						<input type="submit" value="">
+					</form>
+				</div>
+				<hr>
+				<li><a href="#">All Categories</a></li>
+				<li><a href="#">Montage</a></li>
+				<li><a href="#">Combo String</a></li>
+				<li><a href="#">Tutorial</a></li>
+				<li><a href="#">Funny</a></li>
+				<li><a href="#">Tourney</a></li>
+				<li><a href="#">Other</a></li>
+			</ul>
+		</div>
+		<div id="page-content-wrapper">
+   		<div class="container-fluid">
+				<div ng-view></div>
+			</div>
+		</div>	
+	</div>
+<footer>
+	<small>copyright &copy; 2016 jordan clarke, all rights reserved</small>
+</footer>
+</body>
+</html>

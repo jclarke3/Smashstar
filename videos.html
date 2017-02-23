@@ -1,0 +1,16 @@
+  <div ng-controller="videoCtrl"> 
+  <h2>Videos</h2>
+  <div class="row" ng-repeat="x in filteredVideos track by $index"> 
+    <a href="./#/watch/{{x.VideoId}}">
+    <img border="0"src="./images/{{x.Char1}}-css.png" alt="./images/other.png"width="50" height="50">
+    </a>   
+    <label>Title {{x.Title}}</label><br>      
+    <label>Description {{x.Description}}</label>
+    <label>URL {{x.URL}}</label>
+  </div>
+  <pagination total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()" class="pagination-sm" items-per-page="numPerPage"></pagination>
+
+  <!--<div data-pagination="" data-num-pages="numPages()" 
+      data-current-page="currentPage" data-max-size="maxSize"  
+      data-boundary-links="true"></div>-->
+</div>

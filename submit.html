@@ -1,0 +1,46 @@
+
+<div class="container">
+	<form ng-submit="submit()" style="text-align:center">
+		<h1>Submit Your Video</h1><br>
+    <label>Title (required) -</label> <br>
+		<input type="text" ng-model="video.Title" placeholder="Title"/>
+		<br><br>
+    <div class="form-group form-inline">
+          <label>Video URL (required) -</label> <br>
+      		<input type="text" ng-model="video.URL" placeholder="URL"/>
+          <select ng-model="video.Source" placeholder="Source">
+            <option value="oddshot">Oddshot</option>
+            <option value="twitchclip">Twitch Clip</option>
+            <option value="twitchstream">Twitch Stream</option>
+            <option value="youtube">Youtube</option>
+            <option value="twitter">Twitter</option>
+          </select>
+    </div>
+    <div class="form-group form-inline">
+      <textarea ng-model="video.Description" placeholder="Description"/>
+      <select ng-model="video.Category" placeholder="Category">
+        <option value="montage">Combo Video/Montage</option>
+        <option value="string">Combo String</option>
+        <option value="tutorial">Tutorial</option>
+        <option value="funny">Funny</option>
+        <option value="tourney">Tournament</option>
+      </select>
+    </div>
+		<br>
+    <div class="form-group form-inline">
+      <input type="text" ng-model="video.Player1" placeholder="Player 1"/>
+		  <input type="text" ng-model="video.Char1" placeholder="Character 1"/>
+
+    </div>
+    <div class="form-group form-inline">
+      <input type="text" ng-model="video.Player2" placeholder="Player 2"/>
+		  <input type="text" ng-model="video.Char2" placeholder="Character 2"/>
+
+    </div>    
+    <br>
+
+    <br>
+    <!--<div class="g-recaptcha" data-sitekey="6LeZWiQTAAAAACZd5B3fs0R6ph2mvOeDbaV98Ogr"></div>-->
+		<input class="btn btn-success" type="submit" value="Submit"/>        
+	</form>
+</div>
